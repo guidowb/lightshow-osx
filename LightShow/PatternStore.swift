@@ -18,7 +18,7 @@ class PatternStore {
             do {
                 let contents = try String(contentsOfFile: path)
                 print(name + ": " + contents)
-                render(contents.CString())
+                render(name.CString(), contents.CString())
                 let size = Int(getSize())
                 let pattern = LightShow.Pattern(name: name, size: size)
                 for p in 0..<size {

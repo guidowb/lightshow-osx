@@ -20,6 +20,8 @@
 		A9548FE62561E4DD00441B1A /* BridgeCanvas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9548FE42561E4DD00441B1A /* BridgeCanvas.cpp */; };
 		A95490102561EE7E00441B1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A918791F2559FD7600C6B952 /* Main.storyboard */; };
 		A95490152562F41D00441B1A /* Bridging.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95490142562F41D00441B1A /* Bridging.swift */; };
+		A9B5EA51256ACC3E00E2F783 /* liblightshow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B5EA48256AC60400E2F783 /* liblightshow.a */; };
+		A9B5EA68256ACEAA00E2F783 /* Patterns in Resources */ = {isa = PBXBuildFile; fileRef = A9B5EA67256ACEAA00E2F783 /* Patterns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +63,10 @@
 		A9548FDF2561E36000441B1A /* Bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging.h; sourceTree = "<group>"; };
 		A9548FE42561E4DD00441B1A /* BridgeCanvas.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BridgeCanvas.cpp; sourceTree = "<group>"; };
 		A9548FE52561E4DD00441B1A /* BridgeCanvas.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BridgeCanvas.hpp; sourceTree = "<group>"; };
-		A9548FEE2561ECF000441B1A /* SolidBlack.lsp */ = {isa = PBXFileReference; lastKnownFileType = text; path = SolidBlack.lsp; sourceTree = "<group>"; };
 		A95490142562F41D00441B1A /* Bridging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridging.swift; sourceTree = "<group>"; };
+		A9B5EA48256AC60400E2F783 /* liblightshow.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblightshow.a; path = "../lightshow-render/src/liblightshow.a"; sourceTree = "<group>"; };
+		A9B5EA4A256AC77A00E2F783 /* LightShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LightShow.h; path = "../../lightshow-render/src/LightShow.h"; sourceTree = "<group>"; };
+		A9B5EA67256ACEAA00E2F783 /* Patterns */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Patterns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9B5EA51256ACC3E00E2F783 /* liblightshow.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,10 +98,12 @@
 		A918790A2559FD7300C6B952 = {
 			isa = PBXGroup;
 			children = (
+				A9B5EA67256ACEAA00E2F783 /* Patterns */,
 				A91879152559FD7400C6B952 /* LightShow */,
 				A918792B2559FD7600C6B952 /* LightShowTests */,
 				A91879362559FD7600C6B952 /* LightShowUITests */,
 				A91879142559FD7300C6B952 /* Products */,
+				A9B5EA47256AC60400E2F783 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,7 +120,7 @@
 		A91879152559FD7400C6B952 /* LightShow */ = {
 			isa = PBXGroup;
 			children = (
-				A9548FED2561EC2500441B1A /* Patterns */,
+				A9B5EA4A256AC77A00E2F783 /* LightShow.h */,
 				A91879162559FD7400C6B952 /* AppDelegate.swift */,
 				A91879182559FD7400C6B952 /* ContentView.swift */,
 				A918791A2559FD7600C6B952 /* Assets.xcassets */,
@@ -159,12 +166,12 @@
 			path = LightShowUITests;
 			sourceTree = "<group>";
 		};
-		A9548FED2561EC2500441B1A /* Patterns */ = {
+		A9B5EA47256AC60400E2F783 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A9548FEE2561ECF000441B1A /* SolidBlack.lsp */,
+				A9B5EA48256AC60400E2F783 /* liblightshow.a */,
 			);
-			path = Patterns;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9B5EA68256ACEAA00E2F783 /* Patterns in Resources */,
 				A95490102561EE7E00441B1A /* Main.storyboard in Resources */,
 				A918791E2559FD7600C6B952 /* Preview Assets.xcassets in Resources */,
 				A918791B2559FD7600C6B952 /* Assets.xcassets in Resources */,
@@ -486,6 +494,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "../lightshow-render/src";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = guidowb.LightShow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -513,6 +522,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "../lightshow-render/src";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = guidowb.LightShow;
 				PRODUCT_NAME = "$(TARGET_NAME)";

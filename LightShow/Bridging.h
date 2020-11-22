@@ -10,6 +10,6 @@
 
 int getSize();
 unsigned int getPixel(int index);
-void render(char *pattern);
+void render(const char *sourceName, const char *pattern);
 
 #endif /* Bridging_h */

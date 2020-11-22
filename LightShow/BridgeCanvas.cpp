@@ -6,7 +6,7 @@
 //
 
 #include "BridgeCanvas.hpp"
-#include "LightShow/LightShow.h"
+#include "LightShow.h"
 
 #include <stdio.h>
 #include <string.h>
@@ -26,10 +26,8 @@ public:
 
 static BridgeCanvas canvas;
 
-void render(char *pattern) {
-    Renderer *renderer = Parser::parse(pattern);
-    renderer->render(&canvas);
-    delete renderer;
+void render(const char *sourceName, const char *pattern) {
+    render(sourceName, pattern, &canvas);
 }
 
 int getSize() {
@@ -37,8 +35,7 @@ int getSize() {
 }
 
 unsigned int getPixel(int index) {
-    RGBA rgba = canvas.getPixel(index);
-    unsigned int pixel = rgba.r << 24 | rgba.g << 16 | rgba.b << 8 | rgba.a;
+    RGBA pixel = canvas.getPixel(index);
     return pixel;
 }
 
