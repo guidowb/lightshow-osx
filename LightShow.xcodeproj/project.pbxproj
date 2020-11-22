@@ -11,9 +11,15 @@
 		A91879192559FD7400C6B952 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91879182559FD7400C6B952 /* ContentView.swift */; };
 		A918791B2559FD7600C6B952 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A918791A2559FD7600C6B952 /* Assets.xcassets */; };
 		A918791E2559FD7600C6B952 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A918791D2559FD7600C6B952 /* Preview Assets.xcassets */; };
-		A91879212559FD7600C6B952 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A918791F2559FD7600C6B952 /* Main.storyboard */; };
-		A918792D2559FD7600C6B952 /* LightStringsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A918792C2559FD7600C6B952 /* LightStringsTests.swift */; };
-		A91879382559FD7600C6B952 /* LightStringsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91879372559FD7600C6B952 /* LightStringsUITests.swift */; };
+		A918792D2559FD7600C6B952 /* LightShowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A918792C2559FD7600C6B952 /* LightShowTests.swift */; };
+		A91879382559FD7600C6B952 /* LightShowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91879372559FD7600C6B952 /* LightShowUITests.swift */; };
+		A91879492559FE4500C6B952 /* PatternRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91879482559FE4500C6B952 /* PatternRow.swift */; };
+		A9187953255A2F1B00C6B952 /* PatternList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9187952255A2F1B00C6B952 /* PatternList.swift */; };
+		A9548FCE2561C19700441B1A /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9548FCD2561C19700441B1A /* Pattern.swift */; };
+		A9548FD32561C4CC00441B1A /* PatternStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9548FD22561C4CC00441B1A /* PatternStore.swift */; };
+		A9548FE62561E4DD00441B1A /* BridgeCanvas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9548FE42561E4DD00441B1A /* BridgeCanvas.cpp */; };
+		A95490102561EE7E00441B1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A918791F2559FD7600C6B952 /* Main.storyboard */; };
+		A95490152562F41D00441B1A /* Bridging.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95490142562F41D00441B1A /* Bridging.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,20 +40,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A91879132559FD7300C6B952 /* LightStrings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightStrings.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A91879132559FD7300C6B952 /* LightShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A91879162559FD7400C6B952 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A91879182559FD7400C6B952 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A918791A2559FD7600C6B952 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A918791D2559FD7600C6B952 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A91879202559FD7600C6B952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A91879222559FD7600C6B952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A91879232559FD7600C6B952 /* LightStrings.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LightStrings.entitlements; sourceTree = "<group>"; };
-		A91879282559FD7600C6B952 /* LightStringsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightStringsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A918792C2559FD7600C6B952 /* LightStringsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightStringsTests.swift; sourceTree = "<group>"; };
+		A91879232559FD7600C6B952 /* LightShow.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LightShow.entitlements; sourceTree = "<group>"; };
+		A91879282559FD7600C6B952 /* LightShowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightShowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A918792C2559FD7600C6B952 /* LightShowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightShowTests.swift; sourceTree = "<group>"; };
 		A918792E2559FD7600C6B952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A91879332559FD7600C6B952 /* LightStringsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightStringsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A91879372559FD7600C6B952 /* LightStringsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightStringsUITests.swift; sourceTree = "<group>"; };
+		A91879332559FD7600C6B952 /* LightShowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightShowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A91879372559FD7600C6B952 /* LightShowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightShowUITests.swift; sourceTree = "<group>"; };
 		A91879392559FD7600C6B952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A91879482559FE4500C6B952 /* PatternRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternRow.swift; sourceTree = "<group>"; };
+		A9187952255A2F1B00C6B952 /* PatternList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternList.swift; sourceTree = "<group>"; };
+		A9548FCD2561C19700441B1A /* Pattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pattern.swift; sourceTree = "<group>"; };
+		A9548FD22561C4CC00441B1A /* PatternStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternStore.swift; sourceTree = "<group>"; };
+		A9548FDF2561E36000441B1A /* Bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging.h; sourceTree = "<group>"; };
+		A9548FE42561E4DD00441B1A /* BridgeCanvas.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BridgeCanvas.cpp; sourceTree = "<group>"; };
+		A9548FE52561E4DD00441B1A /* BridgeCanvas.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BridgeCanvas.hpp; sourceTree = "<group>"; };
+		A9548FEE2561ECF000441B1A /* SolidBlack.lsp */ = {isa = PBXFileReference; lastKnownFileType = text; path = SolidBlack.lsp; sourceTree = "<group>"; };
+		A95490142562F41D00441B1A /* Bridging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridging.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +93,9 @@
 		A918790A2559FD7300C6B952 = {
 			isa = PBXGroup;
 			children = (
-				A91879152559FD7400C6B952 /* LightStrings */,
-				A918792B2559FD7600C6B952 /* LightStringsTests */,
-				A91879362559FD7600C6B952 /* LightStringsUITests */,
+				A91879152559FD7400C6B952 /* LightShow */,
+				A918792B2559FD7600C6B952 /* LightShowTests */,
+				A91879362559FD7600C6B952 /* LightShowUITests */,
 				A91879142559FD7300C6B952 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,25 +103,34 @@
 		A91879142559FD7300C6B952 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A91879132559FD7300C6B952 /* LightStrings.app */,
-				A91879282559FD7600C6B952 /* LightStringsTests.xctest */,
-				A91879332559FD7600C6B952 /* LightStringsUITests.xctest */,
+				A91879132559FD7300C6B952 /* LightShow.app */,
+				A91879282559FD7600C6B952 /* LightShowTests.xctest */,
+				A91879332559FD7600C6B952 /* LightShowUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A91879152559FD7400C6B952 /* LightStrings */ = {
+		A91879152559FD7400C6B952 /* LightShow */ = {
 			isa = PBXGroup;
 			children = (
+				A9548FED2561EC2500441B1A /* Patterns */,
 				A91879162559FD7400C6B952 /* AppDelegate.swift */,
 				A91879182559FD7400C6B952 /* ContentView.swift */,
 				A918791A2559FD7600C6B952 /* Assets.xcassets */,
 				A918791F2559FD7600C6B952 /* Main.storyboard */,
 				A91879222559FD7600C6B952 /* Info.plist */,
-				A91879232559FD7600C6B952 /* LightStrings.entitlements */,
+				A91879232559FD7600C6B952 /* LightShow.entitlements */,
 				A918791C2559FD7600C6B952 /* Preview Content */,
+				A91879482559FE4500C6B952 /* PatternRow.swift */,
+				A9187952255A2F1B00C6B952 /* PatternList.swift */,
+				A9548FCD2561C19700441B1A /* Pattern.swift */,
+				A9548FD22561C4CC00441B1A /* PatternStore.swift */,
+				A9548FDF2561E36000441B1A /* Bridging.h */,
+				A95490142562F41D00441B1A /* Bridging.swift */,
+				A9548FE42561E4DD00441B1A /* BridgeCanvas.cpp */,
+				A9548FE52561E4DD00441B1A /* BridgeCanvas.hpp */,
 			);
-			path = LightStrings;
+			path = LightShow;
 			sourceTree = "<group>";
 		};
 		A918791C2559FD7600C6B952 /* Preview Content */ = {
@@ -117,30 +141,38 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		A918792B2559FD7600C6B952 /* LightStringsTests */ = {
+		A918792B2559FD7600C6B952 /* LightShowTests */ = {
 			isa = PBXGroup;
 			children = (
-				A918792C2559FD7600C6B952 /* LightStringsTests.swift */,
+				A918792C2559FD7600C6B952 /* LightShowTests.swift */,
 				A918792E2559FD7600C6B952 /* Info.plist */,
 			);
-			path = LightStringsTests;
+			path = LightShowTests;
 			sourceTree = "<group>";
 		};
-		A91879362559FD7600C6B952 /* LightStringsUITests */ = {
+		A91879362559FD7600C6B952 /* LightShowUITests */ = {
 			isa = PBXGroup;
 			children = (
-				A91879372559FD7600C6B952 /* LightStringsUITests.swift */,
+				A91879372559FD7600C6B952 /* LightShowUITests.swift */,
 				A91879392559FD7600C6B952 /* Info.plist */,
 			);
-			path = LightStringsUITests;
+			path = LightShowUITests;
+			sourceTree = "<group>";
+		};
+		A9548FED2561EC2500441B1A /* Patterns */ = {
+			isa = PBXGroup;
+			children = (
+				A9548FEE2561ECF000441B1A /* SolidBlack.lsp */,
+			);
+			path = Patterns;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A91879122559FD7300C6B952 /* LightStrings */ = {
+		A91879122559FD7300C6B952 /* LightShow */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A918793C2559FD7600C6B952 /* Build configuration list for PBXNativeTarget "LightStrings" */;
+			buildConfigurationList = A918793C2559FD7600C6B952 /* Build configuration list for PBXNativeTarget "LightShow" */;
 			buildPhases = (
 				A918790F2559FD7300C6B952 /* Sources */,
 				A91879102559FD7300C6B952 /* Frameworks */,
@@ -150,14 +182,14 @@
 			);
 			dependencies = (
 			);
-			name = LightStrings;
+			name = LightShow;
 			productName = LightStrings;
-			productReference = A91879132559FD7300C6B952 /* LightStrings.app */;
+			productReference = A91879132559FD7300C6B952 /* LightShow.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A91879272559FD7600C6B952 /* LightStringsTests */ = {
+		A91879272559FD7600C6B952 /* LightShowTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A918793F2559FD7600C6B952 /* Build configuration list for PBXNativeTarget "LightStringsTests" */;
+			buildConfigurationList = A918793F2559FD7600C6B952 /* Build configuration list for PBXNativeTarget "LightShowTests" */;
 			buildPhases = (
 				A91879242559FD7600C6B952 /* Sources */,
 				A91879252559FD7600C6B952 /* Frameworks */,
@@ -168,14 +200,14 @@
 			dependencies = (
 				A918792A2559FD7600C6B952 /* PBXTargetDependency */,
 			);
-			name = LightStringsTests;
+			name = LightShowTests;
 			productName = LightStringsTests;
-			productReference = A91879282559FD7600C6B952 /* LightStringsTests.xctest */;
+			productReference = A91879282559FD7600C6B952 /* LightShowTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A91879322559FD7600C6B952 /* LightStringsUITests */ = {
+		A91879322559FD7600C6B952 /* LightShowUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A91879422559FD7600C6B952 /* Build configuration list for PBXNativeTarget "LightStringsUITests" */;
+			buildConfigurationList = A91879422559FD7600C6B952 /* Build configuration list for PBXNativeTarget "LightShowUITests" */;
 			buildPhases = (
 				A918792F2559FD7600C6B952 /* Sources */,
 				A91879302559FD7600C6B952 /* Frameworks */,
@@ -186,9 +218,9 @@
 			dependencies = (
 				A91879352559FD7600C6B952 /* PBXTargetDependency */,
 			);
-			name = LightStringsUITests;
+			name = LightShowUITests;
 			productName = LightStringsUITests;
-			productReference = A91879332559FD7600C6B952 /* LightStringsUITests.xctest */;
+			productReference = A91879332559FD7600C6B952 /* LightShowUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -202,9 +234,11 @@
 				TargetAttributes = {
 					A91879122559FD7300C6B952 = {
 						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
 					};
 					A91879272559FD7600C6B952 = {
 						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
 						TestTargetID = A91879122559FD7300C6B952;
 					};
 					A91879322559FD7600C6B952 = {
@@ -213,7 +247,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A918790E2559FD7300C6B952 /* Build configuration list for PBXProject "LightStrings" */;
+			buildConfigurationList = A918790E2559FD7300C6B952 /* Build configuration list for PBXProject "LightShow" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -226,9 +260,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A91879122559FD7300C6B952 /* LightStrings */,
-				A91879272559FD7600C6B952 /* LightStringsTests */,
-				A91879322559FD7600C6B952 /* LightStringsUITests */,
+				A91879122559FD7300C6B952 /* LightShow */,
+				A91879272559FD7600C6B952 /* LightShowTests */,
+				A91879322559FD7600C6B952 /* LightShowUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,7 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A91879212559FD7600C6B952 /* Main.storyboard in Resources */,
+				A95490102561EE7E00441B1A /* Main.storyboard in Resources */,
 				A918791E2559FD7600C6B952 /* Preview Assets.xcassets in Resources */,
 				A918791B2559FD7600C6B952 /* Assets.xcassets in Resources */,
 			);
@@ -265,8 +299,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9548FD32561C4CC00441B1A /* PatternStore.swift in Sources */,
+				A95490152562F41D00441B1A /* Bridging.swift in Sources */,
+				A9187953255A2F1B00C6B952 /* PatternList.swift in Sources */,
+				A9548FE62561E4DD00441B1A /* BridgeCanvas.cpp in Sources */,
+				A9548FCE2561C19700441B1A /* Pattern.swift in Sources */,
 				A91879192559FD7400C6B952 /* ContentView.swift in Sources */,
 				A91879172559FD7400C6B952 /* AppDelegate.swift in Sources */,
+				A91879492559FE4500C6B952 /* PatternRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A918792D2559FD7600C6B952 /* LightStringsTests.swift in Sources */,
+				A918792D2559FD7600C6B952 /* LightShowTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A91879382559FD7600C6B952 /* LightStringsUITests.swift in Sources */,
+				A91879382559FD7600C6B952 /* LightShowUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,12 +331,12 @@
 /* Begin PBXTargetDependency section */
 		A918792A2559FD7600C6B952 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A91879122559FD7300C6B952 /* LightStrings */;
+			target = A91879122559FD7300C6B952 /* LightShow */;
 			targetProxy = A91879292559FD7600C6B952 /* PBXContainerItemProxy */;
 		};
 		A91879352559FD7600C6B952 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A91879122559FD7300C6B952 /* LightStrings */;
+			target = A91879122559FD7300C6B952 /* LightShow */;
 			targetProxy = A91879342559FD7600C6B952 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -433,21 +473,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = LightStrings/LightStrings.entitlements;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = LightShow/LightShow.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"LightStrings/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"LightShow/Preview Content\"";
 				DEVELOPMENT_TEAM = 5FKC4DJ862;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = LightStrings/Info.plist;
+				INFOPLIST_FILE = LightShow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = guidowb.LightStrings;
+				PRODUCT_BUNDLE_IDENTIFIER = guidowb.LightShow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = LightShow/Bridging.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -457,21 +500,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = LightStrings/LightStrings.entitlements;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = LightShow/LightShow.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"LightStrings/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"LightShow/Preview Content\"";
 				DEVELOPMENT_TEAM = 5FKC4DJ862;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = LightStrings/Info.plist;
+				INFOPLIST_FILE = LightShow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = guidowb.LightStrings;
+				PRODUCT_BUNDLE_IDENTIFIER = guidowb.LightShow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = LightShow/Bridging.h;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -481,6 +526,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 5FKC4DJ862;
@@ -493,8 +539,10 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = guidowb.LightStringsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LightStringsTests/LightStringsTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LightStrings.app/Contents/MacOS/LightStrings";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LightShow.app/Contents/MacOS/LightShow";
 			};
 			name = Debug;
 		};
@@ -503,6 +551,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 5FKC4DJ862;
@@ -515,8 +564,9 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = guidowb.LightStringsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LightStringsTests/LightStringsTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LightStrings.app/Contents/MacOS/LightStrings";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LightShow.app/Contents/MacOS/LightShow";
 			};
 			name = Release;
 		};
@@ -563,7 +613,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A918790E2559FD7300C6B952 /* Build configuration list for PBXProject "LightStrings" */ = {
+		A918790E2559FD7300C6B952 /* Build configuration list for PBXProject "LightShow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A918793A2559FD7600C6B952 /* Debug */,
@@ -572,7 +622,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A918793C2559FD7600C6B952 /* Build configuration list for PBXNativeTarget "LightStrings" */ = {
+		A918793C2559FD7600C6B952 /* Build configuration list for PBXNativeTarget "LightShow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A918793D2559FD7600C6B952 /* Debug */,
@@ -581,7 +631,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A918793F2559FD7600C6B952 /* Build configuration list for PBXNativeTarget "LightStringsTests" */ = {
+		A918793F2559FD7600C6B952 /* Build configuration list for PBXNativeTarget "LightShowTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A91879402559FD7600C6B952 /* Debug */,
@@ -590,7 +640,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A91879422559FD7600C6B952 /* Build configuration list for PBXNativeTarget "LightStringsUITests" */ = {
+		A91879422559FD7600C6B952 /* Build configuration list for PBXNativeTarget "LightShowUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A91879432559FD7600C6B952 /* Debug */,

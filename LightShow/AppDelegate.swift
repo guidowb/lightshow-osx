@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  LightStrings
+//  LightShow
 //
 //  Created by Guido Westenberg on 11/9/20.
 //
@@ -12,7 +12,7 @@ import SwiftUI
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     var window: NSWindow!
-
+    var store: PatternStore!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Create the SwiftUI view that provides the window contents.
@@ -28,12 +28,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.setFrameAutosaveName("Main Window")
         window.contentView = NSHostingView(rootView: contentView)
         window.makeKeyAndOrderFront(nil)
+        
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
 
-
+    lazy var patterns : [LightShow.Pattern] = {
+        store = PatternStore()
+        store.loadPatterns()
+        return store.patterns
+    }()
 }
 
