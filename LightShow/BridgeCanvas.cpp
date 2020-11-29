@@ -39,3 +39,6 @@ unsigned int getPixel(int index) {
     return pixel;
 }
 
+static long fakeMillis;
+void setMillis(long millis) { fakeMillis = millis; }
+long millis() { return fakeMillis; }

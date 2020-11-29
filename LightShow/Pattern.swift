@@ -14,16 +14,14 @@ import Foundation
 
 class Pattern : Identifiable {
     var id: String!
-    var size: Int!
-    var canvas: [UInt32]!
+    var pattern: String!
+    var nframes: Int!
+    var framerate: Int!
     
-    init(name: String, size: Int) {
+    init(name: String, pattern: String, nframes: Int = 1, framerate: Int = 30) {
         self.id = name
-        self.size = size
-        self.canvas = [UInt32](repeating: 0, count: size)
-    }
-    
-    func setPixel(index: Int, rgba: UInt32) {
-        self.canvas[index] = rgba
+        self.pattern = pattern
+        self.nframes = nframes
+        self.framerate = framerate
     }
 }

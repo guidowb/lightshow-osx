@@ -20,6 +20,7 @@
 		A9548FE62561E4DD00441B1A /* BridgeCanvas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9548FE42561E4DD00441B1A /* BridgeCanvas.cpp */; };
 		A95490102561EE7E00441B1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A918791F2559FD7600C6B952 /* Main.storyboard */; };
 		A95490152562F41D00441B1A /* Bridging.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95490142562F41D00441B1A /* Bridging.swift */; };
+		A96D9F60257338E900F46CB6 /* PatternImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96D9F5F257338E900F46CB6 /* PatternImage.swift */; };
 		A9B5EA51256ACC3E00E2F783 /* liblightshow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B5EA48256AC60400E2F783 /* liblightshow.a */; };
 		A9B5EA68256ACEAA00E2F783 /* Patterns in Resources */ = {isa = PBXBuildFile; fileRef = A9B5EA67256ACEAA00E2F783 /* Patterns */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 		A9548FE42561E4DD00441B1A /* BridgeCanvas.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BridgeCanvas.cpp; sourceTree = "<group>"; };
 		A9548FE52561E4DD00441B1A /* BridgeCanvas.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BridgeCanvas.hpp; sourceTree = "<group>"; };
 		A95490142562F41D00441B1A /* Bridging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridging.swift; sourceTree = "<group>"; };
+		A96D9F5F257338E900F46CB6 /* PatternImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternImage.swift; sourceTree = "<group>"; };
 		A9B5EA48256AC60400E2F783 /* liblightshow.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblightshow.a; path = "../lightshow-render/src/liblightshow.a"; sourceTree = "<group>"; };
 		A9B5EA4A256AC77A00E2F783 /* LightShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LightShow.h; path = "../../lightshow-render/src/LightShow.h"; sourceTree = "<group>"; };
 		A9B5EA67256ACEAA00E2F783 /* Patterns */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Patterns; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				A91879232559FD7600C6B952 /* LightShow.entitlements */,
 				A918791C2559FD7600C6B952 /* Preview Content */,
 				A91879482559FE4500C6B952 /* PatternRow.swift */,
+				A96D9F5F257338E900F46CB6 /* PatternImage.swift */,
 				A9187952255A2F1B00C6B952 /* PatternList.swift */,
 				A9548FCD2561C19700441B1A /* Pattern.swift */,
 				A9548FD22561C4CC00441B1A /* PatternStore.swift */,
@@ -309,6 +312,7 @@
 			files = (
 				A9548FD32561C4CC00441B1A /* PatternStore.swift in Sources */,
 				A95490152562F41D00441B1A /* Bridging.swift in Sources */,
+				A96D9F60257338E900F46CB6 /* PatternImage.swift in Sources */,
 				A9187953255A2F1B00C6B952 /* PatternList.swift in Sources */,
 				A9548FE62561E4DD00441B1A /* BridgeCanvas.cpp in Sources */,
 				A9548FCE2561C19700441B1A /* Pattern.swift in Sources */,

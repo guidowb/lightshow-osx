@@ -11,5 +11,6 @@
 int getSize();
 unsigned int getPixel(int index);
 void render(const char *sourceName, const char *pattern);
+void setMillis(long millis);
 
 #endif /* Bridging_h */
