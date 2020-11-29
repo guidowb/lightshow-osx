@@ -18,7 +18,6 @@ class PatternStore {
             do {
                 let contents = try String(contentsOfFile: path)
                 var pattern: Pattern?
-                print(name + ": " + contents)
                 if contents.starts(with: "animate") {
                     let parts = contents.split(separator: "\n", maxSplits: 1)
                     let words = parts[0].split(separator: " ")
