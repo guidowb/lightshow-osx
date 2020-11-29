@@ -16,17 +16,20 @@
 class BridgeCanvas : public Canvas {
 private:
     RGBA pixels[CANVAS_SIZE];
+    long timestamp;
 
 public:
     virtual int getSize() { return CANVAS_SIZE; }
     virtual void setPixel(int pixel, RGBA color) { pixels[pixel] = color; }
-    virtual int getTimestamp() { return 0; }
+    virtual long getTime() { return timestamp; }
     RGBA getPixel(int pixel) { return pixels[pixel]; }
+    void setTime(long timestamp) { this->timestamp = timestamp; }
 };
 
 static BridgeCanvas canvas;
 
-void render(const char *sourceName, const char *pattern) {
+void render(const char *sourceName, const char *pattern, const long timestamp) {
+    canvas.setTime(timestamp);
     render(sourceName, pattern, &canvas);
 }
 
@@ -38,7 +41,3 @@ unsigned int getPixel(int index) {
     RGBA pixel = canvas.getPixel(index);
     return pixel;
 }
-
-static long fakeMillis;
-void setMillis(long millis) { fakeMillis = millis; }
-long millis() { return fakeMillis; }

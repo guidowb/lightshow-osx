@@ -13,7 +13,7 @@
 extern "C" {
     int getSize();
     unsigned int getPixel(int index);
-    void render(const char *sourceName, const char *pattern);
+    void render(const char *sourceName, const char *pattern, long timestamp);
     void setMillis(long millis);
 };
 

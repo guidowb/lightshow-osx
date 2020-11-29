@@ -17,8 +17,8 @@ struct PatternImage: View {
         let size = NSSize(width: Int(width), height: height)
         let image = NSImage(size: size, flipped: true, drawingHandler: { rect in
             for row in 0 ..< pattern.nframes {
-                setMillis(row * (1000 / pattern.framerate))
-                render(pattern.id.CString(), pattern.pattern.CString())
+                let timestamp = row * (1000 / pattern.framerate)
+                render(pattern.id.CString(), pattern.pattern.CString(), timestamp)
                 for p in 0 ..< width {
                     let rgba = getPixel(p)
                     let r = CGFloat(rgba >> 24 & 0x0ff) / 255.0
