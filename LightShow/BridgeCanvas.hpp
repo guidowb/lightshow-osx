@@ -8,13 +8,15 @@
 #ifndef BridgeCanvas_hpp
 #define BridgeCanvas_hpp
 
+#include <stdlib.h>
 #include <stdio.h>
 
 extern "C" {
-    int getSize();
-    unsigned int getPixel(int index);
-    void render(const char *sourceName, const char *pattern, long timestamp);
-    void setMillis(long millis);
+    uint16_t getSize();
+    uint32_t getPixel(uint16_t index);
+    void *compile2(const char *sourceName, const char *pattern);
+    void render(void *renderer, uint32_t timestamp);
+    void setMillis(uint32_t millis);
 };
 
 #endif /* BridgeCanvas_hpp */
